@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="search-bar">
+            <div class="search-icon">🔍</div>
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="logo-title">
+            <div class="logo">Logo</div>
+            <h1>Website's Name</h1>
+        </div>
+        <div class="user-account">
+            <button onclick="location.href='register.html'">Account</button>
+        </div>
+    </header>
+
+    <main class="register-form">
+        <h2>Register an Account</h2>
+        <form action="/register" method="post" onsubmit="return validateForm()">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <script>
+        function validateForm() {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <footer class="footer">
+        <p>Copyright © 2024 News Website</p>
+    </footer>
+</body>
+</html>
