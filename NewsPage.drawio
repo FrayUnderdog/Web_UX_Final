@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.0">
+  <diagram name="第 1 页" id="vrRxUIPaBHX0UUmL-tkq">
+    <mxGraphModel dx="1411" dy="1875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="70" y="-30" width="1110" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-3" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Logo&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="320.75" y="-20" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-4" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;&lt;b&gt;Website&#39;s Name&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="404.25" y="-20" width="525" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;World&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="80" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-6" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Politics&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="80" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Sports&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="80" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-8" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Bussiness&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="80" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-10" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Pic for News Photos&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="455" y="310" width="340" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-14" value="" style="endArrow=none;html=1;rounded=0;entryX=0.016;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="02rUWr7pG5b4yDuSuZ4g-10" target="02rUWr7pG5b4yDuSuZ4g-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="458.25" y="260" as="sourcePoint" />
+            <mxPoint x="458.25" y="305.4422788605698" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-16" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="02rUWr7pG5b4yDuSuZ4g-10" target="02rUWr7pG5b4yDuSuZ4g-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-17" value="&lt;div&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;font style=&quot;&quot;&gt;News &lt;/font&gt;&lt;font style=&quot;&quot;&gt;Brief&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="240" width="430" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="02rUWr7pG5b4yDuSuZ4g-21" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Copyright&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="490" y="1050" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y0u81fAZ97VvsScAOnDl-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Search Bar&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="-10" width="110" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="DYDMjLRyJyLlaFq4cNeV-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Science&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="860" y="80" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DYDMjLRyJyLlaFq4cNeV-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Account&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="-20" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DYDMjLRyJyLlaFq4cNeV-4" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;News Content&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="295" y="495" width="660" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="DYDMjLRyJyLlaFq4cNeV-7" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Pic for News Photos&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="425" y="680" width="400" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="DYDMjLRyJyLlaFq4cNeV-10" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Entertainment&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="80" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DYDMjLRyJyLlaFq4cNeV-11" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Tech&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="80" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XNnEF3hglgItgBFLeq9g-1" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;News Title&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="120" width="670" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="XNnEF3hglgItgBFLeq9g-2" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;News Content&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="870" width="660" height="175" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
