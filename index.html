@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding - Personalized News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+    <header>
+        <h1>Welcome to Personalized News</h1>
+    </header>
+    <nav>
+        <button onclick="window.location.href='profile.html'">Manage Profiles</button>
+    </nav>
+    
+    <main>
+        <form id="preferences-form" method="post">
+            <h2>Select Your Interests</h2>
+            <label><input type="checkbox" name="interests" value="technology"> Technology</label>
+            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+            <label><input type="checkbox" name="interests" value="business"> Business</label>
+            <label><input type="checkbox" name="interests" value="politics"> Politics</label>
+
+            <h2>Enter Your Age</h2>
+            <input type="number" id="age-input" min="20" max="70" placeholder="Enter your age (20-70)" required>
+            
+            <h2>Select Your Gender (Optional)</h2>
+            <select id="gender">
+                <option value="">Prefer not to say</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <h2>Search for News Keywords</h2>
+            <input type="text" id="search-keywords" placeholder="Optional: Enter keywords">
+
+            <button type="submit">Save Preferences</button>
+        </form>
+        <div id="error-summary" style="color: red; margin-top: 10px;"></div>
+    </main>
+    <footer>© 2024 Personalized News</footer>
+    <script src="newsapp.js"></script>
+</body>
+</html>

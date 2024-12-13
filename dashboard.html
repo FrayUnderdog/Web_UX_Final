@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Personalized News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="dashboard">
+    <header>
+        <h1>Your Personalized News Feed</h1>
+        <nav>
+            <select id="profile-switcher">
+                <option value="default">Default Profile</option>
+            </select>
+            <button id="settings-button">Settings</button>
+            <button onclick="window.location.href='profile.html'">Manage Profiles</button>
+        </nav>
+    </header>
+    <main>
+        <section id="news-feed">
+            <!-- Articles will be dynamically inserted here -->
+        </section>
+        <button id="load-more" style="display: none;">Load More</button>
+    </main>
+    <footer>© 2024 Personalized News</footer>
+    <script src="api.js"></script>
+    <script src="interactions.js"></script>
+    <script src="profiles.js"></script>
+    <script src="newsapp.js"></script>
+</body>
+</html>

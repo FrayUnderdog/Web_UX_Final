@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Profiles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Profiles</h1>
+        <nav>
+            <button onclick="window.location.href='dashboard.html'">Dashboard</button>
+        </nav>
+    </header>
+    <main>
+        <form id="profile-form">
+            <input type="text" id="profile-name" placeholder="Profile Name" required>
+            <button type="submit">Create Profile</button>
+        </form>
+        <div id="profile-list"></div>
+    </main>
+    <footer>© 2024 Personalized News</footer>
+    <script src="profiles.js"></script>
+</body>
+</html>

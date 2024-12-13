@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Personalized News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Settings</h1>
+        <nav>
+            <button onclick="window.location.href='dashboard.html'">Dashboard</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Update Preferences</h2>
+            <form id="update-preferences">
+                <label><input type="checkbox" name="interests" value="technology"> Technology</label>
+                <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                <label><input type="checkbox" name="interests" value="business"> Business</label>
+                <label><input type="checkbox" name="interests" value="health"> Health</label>
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+        <section>
+            <h2>Accessibility</h2>
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+            <button id="increase-font">Increase Font Size</button>
+            <button id="decrease-font">Decrease Font Size</button>
+        </section>
+    </main>
+    <footer>© 2024 Personalized News</footer>
+    <script src="preferences.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const preferences = getPreferences();
+            document.querySelectorAll("input[name='interests']").forEach(input => {
+                if (preferences.categories && preferences.categories.includes(input.value)) {
+                    input.checked = true;
+                }
+            });
+
+            document.getElementById("update-preferences").addEventListener("submit", (e) => {
+                e.preventDefault();
+                const interests = Array.from(document.querySelectorAll("input[name='interests']:checked")).map(input => input.value);
+                if (interests.length > 0) {
+                    updatePreferences({ categories: interests });
+                    alert("Preferences updated successfully!");
+                } else {
+                    alert("Please select at least one interest.");
+                }
+            });
+
+            // Dark Mode Toggle
+            document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
+
+            // Font Size Adjustment
+            document.getElementById("increase-font").addEventListener("click", () => changeFontSize("increase"));
+            document.getElementById("decrease-font").addEventListener("click", () => changeFontSize("decrease"));
+        });
+    </script>
+</body>
+</html>
