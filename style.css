@@ -1,12 +1,13 @@
 /* Base Styles */
 :root {
     --base-font-size: 16px;
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --background-color: #ffffff;
+    --primary-color: #0f98ca ;
+    --primary-hover-color: #559ece;
+    --secondary-color: #6C757D;
+    --background-color-light: #EAF2F8;
+    --background-color: #FFFFFF;
     --text-color: #000000;
-    --dark-background-color: #121212;
-    --dark-text-color: #ffffff;
+    --border-color: #D6D8DB;
 }
 
 body {
@@ -14,13 +15,8 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.6;
-}
-
-.dark-mode {
-    background-color: var(--dark-background-color);
-    color: var(--dark-text-color);
 }
 
 /* Header Styles */
@@ -31,78 +27,138 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid var(--border-color);
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.8rem;
     margin: 0;
 }
 
 nav {
     display: flex;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 nav button,
 nav select {
-    padding: 5px 10px;
-    border: none;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     background-color: #ffffff;
     color: var(--primary-color);
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav button:hover,
 nav select:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-hover-color);
     color: #ffffff;
+}
+
+#save-button {
+    padding: 10px;
+    margin-bottom: 18px;
 }
 
 /* Main Content */
 main {
     padding: 20px;
+    background-color: var(--background-color-light);
 }
 
 #news-feed {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+}
+
+.news-section h2 {
+    margin-left: 3px;
+}
+
+.article {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.article p {
+    margin-left: 18px;
+    font-style: italic;
+}
+
+.article a {
+    margin-left: 18px;
 }
 
 /* Article Styles */
 .article-item {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 15px;
-    background-color: #f8f9fa;
-}
-
-.dark-mode .article-item {
-    background-color: var(--dark-background-color);
-    border-color: #333333;
+    background-color: var(--background-color);
 }
 
 .article-item h3 {
+    font-family: "Lora", serif;
+    font-weight: 600;
     margin: 0 0 10px 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
 }
 
 .article-item p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
     margin: 0 0 10px 0;
+    color: var(--text-color);
 }
 
 .article-item a {
     color: var(--primary-color);
     text-decoration: none;
+    font-weight: 600;
 }
 
 .article-item a:hover {
     text-decoration: underline;
+    color: var(--primary-hover-color);
 }
 
 /* Buttons (Like and Save) */
+.news-feed button,
+div button {
+    /* vertical-align: middle; */
+    margin-top: 5px;
+    margin-left: 18px;
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-hover-color);
+    color: #ffffff;
+}
+
 .article-actions {
     display: flex;
     gap: 10px;
@@ -110,17 +166,28 @@ main {
 
 button.like-button,
 button.save-button {
+    margin-left: 18px;
     padding: 5px 10px;
-    border: none;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: #ffffff;
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.like-button:hover,
+button.save-button:hover {
+    background-color: var(--primary-hover-color);
     color: #ffffff;
 }
 
 button.like-button.liked,
 button.save-button.saved {
     background-color: var(--secondary-color);
+    color: #ffffff;
 }
 
 /* Load More Button */
@@ -128,17 +195,44 @@ button.save-button.saved {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
-    background-color: var(--primary-color);
-    color: #ffffff;
+    background-color: #ffffff;
+    color: var(--primary-color);
     cursor: pointer;
     text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #load-more:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-hover-color);
+    color: #ffffff;
 }
+
+/* Profile Page */
+.profile-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; 
+  }
+  
+  /* Button group container */
+  .button-group {
+    display: flex;
+    /* flex-direction: column;  */
+    /* align-items: flex-end;  */
+    gap: 10px; 
+  }
+  
+  .profile-item button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 
 /* Forms (Onboarding and Settings) */
 form {
@@ -151,13 +245,16 @@ form label {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
 }
 
 form select,
 form input,
 form button {
     padding: 10px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     font-size: 1rem;
 }
@@ -166,10 +263,13 @@ form button {
     background-color: var(--primary-color);
     color: #ffffff;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 form button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-hover-color);
 }
 
 /* Accessibility Controls */
@@ -181,15 +281,19 @@ form button:hover {
 
 .accessibility-controls button {
     padding: 5px 10px;
-    border: none;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     cursor: pointer;
-    background-color: var(--primary-color);
-    color: #ffffff;
+    background-color: #ffffff;
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .accessibility-controls button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-hover-color);
+    color: #ffffff;
 }
 
 /* Footer Styles */
@@ -201,6 +305,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     font-size: 0.9rem;
+    margin-top: 10px;
 }
-
